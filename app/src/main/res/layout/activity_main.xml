@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/setup"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="241dp"
+        android:background="@drawable/btn_green"
+        android:fontFamily="@font/libel"
+        android:text="@string/setup"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_marginBottom="251dp"
+        android:background="@drawable/purple_custom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="641dp"
+        android:text="@string/selamat_datang_di_digibraille"
+        android:textColor="#FFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/applogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="380dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/appicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_galeri"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/btn_green"
+        android:fontFamily="@font/libel"
+        android:text="@string/pilih_dari_galeri"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_teks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setup" />
+
+    <Button
+        android:id="@+id/btn_teks"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/btn_green"
+        android:fontFamily="@font/libel"
+        android:text="@string/input_teks_manual"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
